@@ -40,6 +40,6 @@ $(document).ready(function(){
 
         viz = new tableau.Viz(placeholderDiv, url, options);
     } else {
-        x.value = "Geolocation is not supported by this browser.";
+        $("body").append("<h1>Geolocation is not supported by this browser.</h1>")
     }
 });
